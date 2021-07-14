@@ -1,0 +1,259 @@
+[
+    {
+        "model": "auth.user",
+        "pk": 1,
+        "fields": {
+            "password": "qwe123QWE123",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Рома",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-07-08T18:04:45.621Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 2,
+        "fields": {
+            "password": "qwe123QWE123",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Женя",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-07-08T18:04:45.621Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 3,
+        "fields": {
+            "password": "qwe123QWE123",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Коля",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-07-08T18:04:45.621Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 4,
+        "fields": {
+            "password": "qwe123QWE123",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Лёва",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-07-08T18:04:45.621Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+    {
+        "model": "auth.user",
+        "pk": 5,
+        "fields": {
+            "password": "qwe123QWE123",
+            "last_login": null,
+            "is_superuser": false,
+            "username": "Саша",
+            "first_name": "",
+            "last_name": "",
+            "email": "",
+            "is_staff": false,
+            "is_active": true,
+            "date_joined": "2021-07-08T18:04:45.621Z",
+            "groups": [],
+            "user_permissions": []
+        }
+    },
+
+    {
+        "model": "Book.book",
+        "pk": 1,
+        "fields": {
+            "name": "Книга 1",
+            "description": "Описание книги 1",
+            "price": "250.00",
+            "author": "Иванов И.И.",
+            "owner": 1
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 2,
+        "fields": {
+            "name": "Книга 2",
+            "description": "Описание книги 2",
+            "price": "500.99",
+            "author": "Иванов И.И.",
+            "owner": 1
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 3,
+        "fields": {
+            "name": "Книга 3",
+            "description": "Описание книги 3",
+            "price": "750.99",
+            "author": "Иванов И.И.",
+            "owner": 1
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 4,
+        "fields": {
+            "name": "Книга 4",
+            "description": "Описание книги 4",
+            "price": "1000.00",
+            "author": "Иванов И.И.",
+            "owner": 1
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 5,
+        "fields": {
+            "name": "Книга 5",
+            "description": "Описание книги 5",
+            "price": "500.99",
+            "author": "Петров П.П.",
+            "owner": 2
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 6,
+        "fields": {
+            "name": "Книга 6",
+            "description": "Описание книги 6",
+            "price": "500.99",
+            "author": "Васильев В.В.",
+            "owner": 3
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 7,
+        "fields": {
+            "name": "Книга 7",
+            "description": "Описание книги 7",
+            "price": "500.99",
+            "author": "Сидоров С.С.",
+            "owner": 4
+        }
+    },
+    {
+        "model": "Book.book",
+        "pk": 8,
+        "fields": {
+            "name": "Книга 8",
+            "description": "Описание книги 8",
+            "price": "500.99",
+            "author": "Леонтьев Л.Л.",
+            "owner": 5
+        }
+    },
+
+    {
+        "model": "Book.userbookrelation",
+        "pk": 1,
+        "fields": {
+            "user": 2,
+            "book": 1,
+            "like": true,
+            "favorites": true,
+            "rating": 5
+        }
+    },
+    {
+        "model": "Book.userbookrelation",
+        "pk": 2,
+        "fields": {
+            "user": 3,
+            "book": 1,
+            "like": true,
+            "favorites": true,
+            "rating": 5
+        }
+    },
+    {
+        "model": "Book.userbookrelation",
+        "pk": 3,
+        "fields": {
+            "user": 4,
+            "book": 1,
+            "like": true,
+            "favorites": true,
+            "rating": 5
+        }
+    },
+    {
+        "model": "Book.userbookrelation",
+        "pk": 4,
+        "fields": {
+            "user": 5,
+            "book": 1,
+            "like": true,
+            "favorites": true,
+            "rating": 5
+        }
+    },
+    {
+        "model": "Book.userbookrelation",
+        "pk": 5,
+        "fields": {
+            "user": 1,
+            "book": 8,
+            "like": true,
+            "favorites": false,
+            "rating": null
+        }
+    },
+    {
+        "model": "Book.userbookrelation",
+        "pk": 6,
+        "fields": {
+            "user": 1,
+            "book": 6,
+            "like": true,
+            "favorites": true,
+            "rating": null
+        }
+    },
+    {
+        "model": "Book.userbookrelation",
+        "pk": 7,
+        "fields": {
+            "user": 1,
+            "book": 7,
+            "like": true,
+            "favorites": true,
+            "rating": 5
+        }
+    }
+]

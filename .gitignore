@@ -1,0 +1,12 @@
+.env
+dev_database.db
+dev_INFO.txt
+
+
+*/migrations/*.py
+!*/migrations/__init__.py
+
+
+.vscode/
+__pycache__
+static/

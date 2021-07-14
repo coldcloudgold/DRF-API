@@ -1,0 +1,35 @@
+version: '3'
+
+services:
+
+  postgresdb:
+    image: postgres:13.2-alpine
+    environment:
+      POSTGRES_DB: ${DJANGO_DB_DATABASE}
+      POSTGRES_USER: ${DJANGO_DB_USER}
+      POSTGRES_PASSWORD: ${DJANGO_DB_PASSWORD}
+    ports:
+      - "5433:5432"
+
+  webapp:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/REST
+    ports:
+      - "8001:8000"
+    depends_on:
+      - postgresdb
+
+  nginxserver:
+    build:
+      context: ./docker/nginx
+      dockerfile: Dockerfile
+    # restart: always
+    volumes:
+      - ./static/:/static
+    ports:
+      - "8080:80"
+    depends_on:
+      - webapp
